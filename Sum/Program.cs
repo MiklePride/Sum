@@ -4,13 +4,17 @@
     {
         Random rand = new Random();
         int number = rand.Next(0, 101);
-        int multiplicity = 5;
-        Console.WriteLine(number);
-        
-        for (int i = multiplicity; i < number; i += 5)
+        int sum = 0;
+        int multiplicityOfThree = 3;
+        int multiplicityOfFive = 5;
+       
+        for (int i = 0; i <= number; i++)
         {
-            Console.WriteLine(i);
+            if (i % multiplicityOfThree == 0 || i % multiplicityOfFive == 0)
+            {
+                sum += i;
+            }
+            Console.WriteLine(sum);
         }
-        
     }
 }
