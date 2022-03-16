@@ -14,6 +14,10 @@
             {
                 sum += i;
             }
+            else
+            {
+                continue;
+            }
             Console.WriteLine(sum);
         }
     }
