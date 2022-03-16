@@ -18,7 +18,6 @@
             {
                 continue;
             }
-            Console.WriteLine(sum);
         }
     }
 }
